@@ -483,7 +483,8 @@ DotObject.prototype.set = function (path, val, obj, merge) {
  *
  * @param {Object} recipe Transform recipe
  * @param {Object} obj Object to be transformed
- * @param {Array} mods modifiers for the target
+ * @param {Object} tgt target object 
+ * @return {Object} return transformed object
  */
 DotObject.prototype.transform = function (recipe, obj, tgt) {
   obj = obj || {}
